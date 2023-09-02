@@ -1,4 +1,3 @@
-Certainly! Here's the updated README with the additional test class `ProductTest` included:
 
 ---
 
