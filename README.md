@@ -173,8 +173,7 @@ The component testing approach for the "CST 452 Product Management" project is d
   - Delete: Confirm the ability to delete a product by ID.
   - Read All: Ensure the ability to retrieve all products.
 
-- **Performance**
-  - N/A
+
 
 ### Component Test Checklist
 
