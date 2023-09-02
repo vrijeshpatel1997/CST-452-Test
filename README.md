@@ -204,17 +204,15 @@ The unit testing approach for the "CST 452 Product Management" project is aimed 
 
 ### Unit Test Checklist
 
-| Test Case          | Test Description                                    | Developer | Reviewer | Comments |
-| ------------------ | -------------------------------------------------- | --------- | -------- | -------- |
-| Test GetProduct    | Verify the GetProduct method functionality.       | Vrijesh   |          | Pass     |
-| Test GetProductById| Validate the GetProductById method functionality. | Vrijesh   |          | Pass     |
-| Test UpdateProduct | Mock the UpdateProduct method functionality.      | Vrijesh   |          | Pass     |
-| Test DeleteProduct | Validate the DeleteProduct method functionality.  | Vrijesh   |          | Pass     |
- | Error Handling     | Ensure methods throwing ProductNotFoundException are tested. | Vrijesh |       | Pass     |
-| Test Product Creaation | tests ensure that the Product class's getters and setters work correctly, allowing for the proper creation and manipulation of product objects.
-
-
-| Cross-Origin and Options Requests | Validate cross-origin annotations using @CrossOrigin. | Vrijesh |     | Pass     |
+| Test Case             | Test Description                                           | Developer | Reviewer | Comments |
+| --------------------- | --------------------------------------------------------- | --------- | -------- | -------- |
+| Test GetProduct       | Verify the GetProduct method functionality.              | Vrijesh   |          | Pass     |
+| Test GetProductById   | Validate the GetProductById method functionality.        | Vrijesh   |          | Pass     |
+| Test UpdateProduct    | Mock the UpdateProduct method functionality.             | Vrijesh   |          | Pass     |
+| Test DeleteProduct    | Validate the DeleteProduct method functionality.         | Vrijesh   |          | Pass     |
+| Error Handling        | Ensure methods throwing ProductNotFoundException are tested. | Vrijesh |       | Pass     |
+| Test Product Creation | Ensure that the Product class's getters and setters work correctly, allowing for the proper creation and manipulation of product objects. | Vrijesh | | Pass |
+| Cross-Origin and Options Requests | Validate cross-origin annotations using @CrossOrigin. | Vrijesh | | Pass |
 
 ### Unit Testing Details
 
@@ -234,15 +232,18 @@ The unit testing approach for the "CST 452 Product Management" project is aimed 
 - **Error Handling:**
   - Ensure that methods that throw a `ProductNotFoundException` are tested for the correct exception behavior.
 
+- **Test Product Creation:**
+  - Test that the Product class's getters and setters work as expected, allowing for the proper creation and manipulation of product objects.
+
 - **Cross-Origin and Options Requests:**
   - Validate that cross-origin annotations are applied correctly using `@CrossOrigin`.
 
-**Date**: (Add the date)
+**Date**: 8/27/23
 
 ### Final Sign-Off and Approval
 
-- **Project Name**: CST 452 Product Management
-- **8/27/23**
+- **Milestone 4 Tests **: CST 452 Product Management
+- **Date**: 8/27/23
 
 ---
 
