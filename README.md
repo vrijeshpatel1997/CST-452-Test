@@ -153,41 +153,98 @@ Test Plan: Unit Testing
 Test Approach
 The unit testing approach for the "CST 452 Product Management" project is aimed at testing individual units of code in isolation, typically at the method level. The primary goal is to validate the functionality of methods within the application.
 
-Test Tools
-JUnit
-Unit Test Checklist
-Test Case	Test Description	Developer	Reviewer	Comments
-Test GetProduct	Verify the GetProduct method functionality.	Vrijesh		Pass
-Test GetProductById	Validate the GetProductById method functionality.	Vrijesh		Pass
-Test UpdateProduct	Mock the UpdateProduct method functionality.	Vrijesh		Pass
-Test DeleteProduct	Validate the DeleteProduct method functionality.	Vrijesh		Pass
-Error Handling	Ensure methods throwing ProductNotFoundException are tested.	Vrijesh		Pass
-Cross-Origin and Options Requests	Validate cross-origin annotations using @CrossOrigin.	Vrijesh		Pass
-Unit Testing Details
-Test GetProduct:
+Certainly, I've created test plans for both Component Testing and Unit Testing for the "CST 452 Product Management" project. Please note that you may need to tailor these plans to your specific project requirements and add dates as needed.
 
-Mock the productRepository.findAll method to return a list of products.
-Validate that the returned list of products matches the expected list.
-Test GetProductById:
+---
 
-Mock the productRepository.findById method to return a product for a given ID.
-Test UpdateProduct:
+## Test Plan: Component Testing
 
-Mock the productRepository.findById method to return an existing product for a given ID.
-Test DeleteProduct:
+### Test Approach
+The component testing approach for the "CST 452 Product Management" project is designed to ensure the functionality and performance of the Product Controller. The focus is on testing individual components or units of the system to verify that they operate correctly.
 
-Mock the productRepository.existsById method to return true for an existing product ID.
-Error Handling:
+### Test Tools
+1. JUnit
 
-Ensure that methods that throw a ProductNotFoundException are tested for the correct exception behavior.
-Cross-Origin and Options Requests:
+### Component: Product Controller
 
-Validate that cross-origin annotations are applied correctly using @CrossOrigin.
-Date: (Add the date)
+- **Functionality**
+  - Add Product: Verify the ability to add a new product using a POST request.
+  - Edit: Validate the ability to edit a product.
+  - Delete: Confirm the ability to delete a product by ID.
+  - Read All: Ensure the ability to retrieve all products.
 
-Final Sign-Off and Approval
-Project Name: CST 452 Product Management
-Date: (Add the date)
+- **Performance**
+  - N/A
+
+### Component Test Checklist
+
+| Test Case      | Test Description                    | Developer | Reviewer | Comments |
+| -------------- | ---------------------------------- | --------- | -------- | -------- |
+| Add Product    | Verify the addition of a new product using a POST request. | Vrijesh |          | Pass     |
+| Edit           | Validate the ability to edit a product. | Vrijesh |          | Pass     |
+| Delete         | Confirm the ability to delete a product by ID. | Vrijesh |          | Pass     |
+| Read All       | Ensure the ability to retrieve all products. | Vrijesh |          | Pass     |
+
+**Date**: 8/27/23
+
+### Final Sign-Off and Approval
+
+- **Project Name**: CST 452 Product Management
+- **Date**: 8/27/23
+
+---
+
+## Test Plan: Unit Testing
+
+### Test Approach
+The unit testing approach for the "CST 452 Product Management" project is aimed at testing individual units of code in isolation, typically at the method level. The primary goal is to validate the functionality of methods within the application.
+
+### Test Tools
+1. JUnit
+
+### Unit Test Checklist
+
+| Test Case          | Test Description                                    | Developer | Reviewer | Comments |
+| ------------------ | -------------------------------------------------- | --------- | -------- | -------- |
+| Test GetProduct    | Verify the GetProduct method functionality.       | Vrijesh   |          | Pass     |
+| Test GetProductById| Validate the GetProductById method functionality. | Vrijesh   |          | Pass     |
+| Test UpdateProduct | Mock the UpdateProduct method functionality.      | Vrijesh   |          | Pass     |
+| Test DeleteProduct | Validate the DeleteProduct method functionality.  | Vrijesh   |          | Pass     |
+ | Error Handling     | Ensure methods throwing ProductNotFoundException are tested. | Vrijesh |       | Pass     |
+| Test Product Creaation | tests ensure that the Product class's getters and setters work correctly, allowing for the proper creation and manipulation of product objects.
+
+
+| Cross-Origin and Options Requests | Validate cross-origin annotations using @CrossOrigin. | Vrijesh |     | Pass     |
+
+### Unit Testing Details
+
+- **Test GetProduct:**
+  - Mock the `productRepository.findAll` method to return a list of products.
+  - Validate that the returned list of products matches the expected list.
+
+- **Test GetProductById:**
+  - Mock the `productRepository.findById` method to return a product for a given ID.
+
+- **Test UpdateProduct:**
+  - Mock the `productRepository.findById` method to return an existing product for a given ID.
+
+- **Test DeleteProduct:**
+  - Mock the `productRepository.existsById` method to return true for an existing product ID.
+
+- **Error Handling:**
+  - Ensure that methods that throw a `ProductNotFoundException` are tested for the correct exception behavior.
+
+- **Cross-Origin and Options Requests:**
+  - Validate that cross-origin annotations are applied correctly using `@CrossOrigin`.
+
+**Date**: (Add the date)
+
+### Final Sign-Off and Approval
+
+- **Project Name**: CST 452 Product Management
+- **8/27/23**
+
+---
 
 
 ## Conclusion
